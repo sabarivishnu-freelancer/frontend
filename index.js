@@ -7,7 +7,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// serve index.html
 app.use(express.static(__dirname));
 
 app.get("/", (req, res) => {
